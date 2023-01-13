@@ -1,0 +1,32 @@
+public class Cicikus {
+//Fields
+	int age;
+	String talk;
+
+	public void chirping() {
+		System.out.println("cicikus cicikus cicikus babacım");
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+// constructor
+	public Cicikus(String talk) {
+		this.talk = talk;
+	}
+
+	public static void main(String[] args) {
+
+		Cicikus cicito = new Cicikus("cicikus");
+		cicito.chirping();
+		cicito.setAge(7);
+		System.out.println(cicito.getAge());
+
+	}
+
+}
